@@ -18,6 +18,12 @@ class SubRepEnv:
         observation_space: Shape (8,) state vector.
         reward_space: Shape (2,) vector [Safety, Fuel].
     """
+
+    # Explicit measurement identity for the MetaMo bridge. Legacy artifacts
+    # without this corrected orientation require separate evidence/migration.
+    environment_id = "mo-lunar-lander-v3"
+    objective_schema_version = "lander_safety_fuel_v2"
+    objective_names = ("safety", "fuel")
     
     def __init__(self, seed: int = 42, render_mode: str = None):
         """Initialize the environment."""

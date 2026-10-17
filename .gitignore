@@ -39,3 +39,5 @@ data/safety_gymnasium_library_seed44_lagrangian.json
 data/certificates.metta
 demo/artifacts/*
 data/raw_mixed/
+
+venv/
